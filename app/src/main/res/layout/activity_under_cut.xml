@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.onlinebarbershop.UnderCut">
+    <ScrollView
+        android:background="#0d5271"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/undercuticon" />
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:gravity="right"
+                                android:textSize="16dp"
+                                android:id="@+id/harga"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textColor="#0d5271"
+                                android:textStyle="bold"
+                                android:text="HARGA : "/>
+                            <TextView
+                                android:textSize="16dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textStyle="italic"
+                                android:textColor="#ff0109 "
+                                android:text="Rp. 15000"
+                                android:layout_toRightOf="@id/harga"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/nama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nama"
+                            android:textColorHint="#0d5271"
+                            android:inputType="text"/>
+                        <EditText
+                            android:layout_marginTop="9dp"
+                            android:id="@+id/alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Alamat"
+                            android:textColorHint="#0d5271"
+                            android:inputType="textLongMessage"/>
+                        <EditText
+                            android:layout_marginTop="9dp"
+                            android:id="@+id/telp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No. Telp"
+                            android:textColorHint="#0d5271"
+                            android:inputType="number"/>
+                        <Button
+                            android:layout_marginTop="9dp"
+                            android:onClick="pesan"
+                            android:background="#0d5271"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Via email"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+                        <WebView
+                            android:id="@+id/deskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
