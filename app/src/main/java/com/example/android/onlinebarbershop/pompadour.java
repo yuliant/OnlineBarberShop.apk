@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class pompadour extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class pompadour extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pompadour);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_pompadour);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Pompadour pada umumnya ditandai dengan volume rambut yang banyak pada bagian " +
                 "atasnya. Jenis rambut pria Pompadour ini banyak sekali jenisnya dan untuk membuat " +
                 "gaya rambut ini lebih rapih sebaiknya kamu juga menggunakan pomade agar kegantengan " +

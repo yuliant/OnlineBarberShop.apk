@@ -6,14 +6,39 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
 LinearLayout alamat;
 LinearLayout web;
+
+int harga_fade = 15000;
+int harga_manbun = 15000;
+int harga_pompadour = 15000;
+int harga_sbs = 15000;
+int harga_sidepart = 15000;
+int harga_topknot = 15000;
+int harga_undercut = 15000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        TextView fade = (TextView) findViewById(R.id.harga_fade);
+        fade.setText("Rp. "+harga_fade);
+        TextView manbun = (TextView) findViewById(R.id.harga_manbun);
+        manbun.setText("Rp. "+harga_manbun);
+        TextView pompadour = (TextView) findViewById(R.id.harga_pompadour);
+        pompadour.setText("Rp. "+harga_pompadour);
+        TextView sbs = (TextView) findViewById(R.id.harga_sbs);
+        sbs.setText("Rp. "+harga_sbs);
+        TextView sidepart = (TextView) findViewById(R.id.harga_sidepart);
+        sidepart.setText("Rp. "+harga_sidepart);
+        TextView topknot = (TextView) findViewById(R.id.harga_topknot);
+        topknot.setText("Rp. "+harga_topknot);
+        TextView undercut = (TextView) findViewById(R.id.harga_undercut);
+        undercut.setText("Rp. "+harga_undercut);
 
         alamat = (LinearLayout) findViewById(R.id.alamat);
         alamat.setOnClickListener(new View.OnClickListener() {

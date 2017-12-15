@@ -49,14 +49,14 @@
                                 android:textStyle="bold"
                                 android:text="HARGA : "/>
                             <TextView
+                                android:id="@+id/harga_topknot"
                                 android:textSize="16dp"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:textStyle="italic"
                                 android:textColor="#ff0109 "
-                                android:text="Rp. 15000"
-                                android:layout_toRightOf="@id/harga"/>
+                                android:text="Rp. 0" />
                         </LinearLayout>
 
                         <EditText

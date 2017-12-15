@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class sidepart extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class sidepart extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sidepart);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_sidepart);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Model rambut ini biasa kita kenal dengan model rambut belah samping atau " +
                 "belang pinggir. Model ini sudah sangat umum di lingkungan kita dan masih tetap " +
                 "eksis hingga sekarang. Kalangan professional umumnya memakai potongan rambut ini " +

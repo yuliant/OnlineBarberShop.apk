@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class top extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class top extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_top);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_topknot);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Gaya rambut top knot ini mirip dengan Man Bun, Hanya saja Model rambut top knot " +
                 "mempunyai sisi yang dipotong pendek, tidak seperti man bun yang tetap tebal pada sisinya. " +
                 "Ikatan pada gaya rambut ini biasanya berada pada pertengahan antara ujung atas dan ujung " +

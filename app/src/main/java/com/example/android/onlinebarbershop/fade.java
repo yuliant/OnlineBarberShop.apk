@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class fade extends AppCompatActivity {
@@ -17,6 +18,10 @@ public class fade extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fade);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_fade);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Gaya Rambut Fade atau biasa disebut dengan Fade Haircut merupakan potongan rambut " +
                 "yang memotong hingga tipis bagian samping dan belakang kepala dan membiarkan rambut bagian atas tetap panjang. " +
                 "Tren gaya rambut fade ini termasuk salah satu yang mulai banyak dipakai anak muda saat ini.";

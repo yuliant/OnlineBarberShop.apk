@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class sbs extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class sbs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sbs);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_sbs);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Gaya rambut Short Back and Sides memiliki potongan yang panjang pada bagian " +
                 "atas, gaya rambut ini dibentuk dengan menyisir rambut bagian atas ke belakang " +
                 "dengan bentuk meruncing dibelakang. Gaya rambut Short Back and Sides adalah pilihan " +

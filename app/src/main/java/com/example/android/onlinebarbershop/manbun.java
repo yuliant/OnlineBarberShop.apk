@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class manbun extends AppCompatActivity {
@@ -16,6 +17,10 @@ public class manbun extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manbun);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_manbun);
+        quantityTextView.setText("Rp. "+quantity);
+
         String text = "Gaya rambut Man Bun ini cocok untuk kamu yang berani tampil beda dan pastinya" +
                 " mempunyai rambut yang agak panjang. Man Bun Hairstyle bisa dibuat dengan cara menarik" +
                 " seluruh rambut kamu ke pusat kepala dan kamu bisa menguncir rambut tersebut. " +

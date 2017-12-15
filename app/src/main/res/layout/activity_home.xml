@@ -198,11 +198,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_fade"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -239,11 +240,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_manbun"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -286,11 +288,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_pompadour"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -326,11 +329,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_sbs"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -372,11 +376,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_sidepart"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -412,11 +417,12 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_topknot"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>
@@ -459,12 +465,13 @@
                                     android:textStyle="bold" />
 
                                 <TextView
+                                    android:id="@+id/harga_undercut"
                                     android:onClick="undercut"
                                     android:layout_width="wrap_content"
                                     android:layout_height="0dp"
                                     android:layout_marginLeft="5dp"
                                     android:layout_weight="1"
-                                    android:text="Rp 15000"
+                                    android:text="Rp 0"
                                     android:textColor="#ff0109 "
                                     android:textStyle="italic" />
                             </LinearLayout>

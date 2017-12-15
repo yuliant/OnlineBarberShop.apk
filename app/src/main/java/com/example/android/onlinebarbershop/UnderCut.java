@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class UnderCut extends AppCompatActivity {
@@ -16,6 +17,9 @@ int quantity = 15000;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_under_cut);
+
+        TextView quantityTextView = (TextView) findViewById(R.id.harga_undercut);
+        quantityTextView.setText("Rp. "+quantity);
 
         String text = "Gaya rambut ini mengingatkan kita pada film Fury yang diperankan oleh Brad Pitt. " +
                 "Pada Film tersebut Brad Pitt sangat menginspirasi semua pria dimuka bumi ini dengan " +
